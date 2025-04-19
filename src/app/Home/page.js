@@ -1,6 +1,6 @@
 'use client';
 
-import { Box, Heading, Text, Button, Grid, Flex, Strong } from '@radix-ui/themes';
+import { Box, Heading, Text, Button, Grid, Flex, Strong, Card, Container } from '@radix-ui/themes';
 import Image from 'next/image';
 import React from 'react';
 import hero from '../../../public/hero.jpg';
@@ -257,11 +257,100 @@ const Page = () => {
           ))}
         </Grid>
       </Box>
-        <Box align="right" className="w-[80px] h-[80px] rounded-full -rotate-12 border-l-[15px] border-l-yellow-500"></Box>
-      <Box className="bg-white-200 border-r-[50px] border-r-blue-400 relative w-[100px] h-[100px] rounded-full" mt={'9'}>
-      </Box>
-      <Box>
-        <Heading as='h4' weight={'medium'} align={'center'} mt={'9'}>Great Afordable Pricing Plans</Heading>
+      <Box mb={'8'} className='bg-gray-100'>
+        <Box className="bg-white-200 border-r-[50px] border-r-blue-400 relative w-[100px] h-[100px] rounded-full" mt={'9'}>
+        </Box>
+        <Box>
+          <Heading as='h4' weight={'bold'} size={'8'} align={'center'} mt={'9'}>Great Afordable Pricing Plans</Heading>
+          <Text as='p' mt={'5'} color='gray' align={'center'} weight={'medium'}>It is a long established fact that a reader will be destrected by the readable content <br /> of a page when looking at its layout. The point of using.</Text>
+        </Box>
+        <Box >
+          <Flex justify={'center'} mt={'7'} >
+            <Text as='p' size={'4'} weight={'light'} >Bill Monthly</Text>
+            <Box mx={'5'}>
+              <label className="relative inline-flex items-center cursor-pointer">
+                <input type="checkbox" class="sr-only peer" value="" />
+                <div
+                  className="group peer bg-white rounded-full duration-300 w-16 h-8 ring-2 ring-red-500 after:duration-300 after:bg-red-500 peer-checked:after:bg-green-500 peer-checked:ring-green-500 after:rounded-full after:absolute after:h-6 after:w-6 after:top-1 after:left-1 after:flex after:justify-center after:items-center peer-checked:after:translate-x-8 peer-hover:after:scale-95"
+                ></div>
+              </label>
+            </Box>
+            <Text as='p' size={'4'} weight={'light'}>Bill Anually</Text>
+          </Flex>
+        </Box>
+        <Container mt={'9'}>
+          <Grid columns={{ initial: "1", md: "3" }} gap="7">
+            <Box mb={'7'} className='flex flex-col items-center p-6 bg-gradient-to-br from-white to-white rounded-xl shadow-xl'>
+              <Text as='p' size={'5'} align={'center'} weight={'medium'} color='black'>Starter</Text>
+              <Flex justify={'center'} mt={'8'}>
+                <Text as='h5' size='8' weight='medium'>$348</Text>
+                <Text mt={'2'} mx={'1'} >/per Year</Text>
+              </Flex>
+              <Text as='p' mt={'3'} weight={'medium'} color='gray' align={'center'} >No Credit Card Required</Text>
+              <Box align={'center'} mt={'6'}>
+                <button
+                  mt="5"
+                  size="4"
+                  radius="full"
+                  className="bg-pink-500 hover:bg-blue-500 text-white px-9 py-3 font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out"
+                >
+                  Try For Free
+                </button>
+              </Box>
+              <Text align={'center'} mt={'5'} weight={'medium'} color='gray' as='p'>400 GB Storage</Text>
+              <Text align={'center'} mt={'4'} weight={'medium'} color='gray' as='p'>Unlimited Photos & sAnd Videos</Text>
+              <Text align={'center'} mt={'3'} weight={'medium'} color='gray' as='p'>Exclusive Support</Text>
+              <Text align={'center'} mt={'7'} size={'5'} weight={'medium'} color='black' as='p'>7 Day Free Trial</Text>
+
+            </Box>
+            <Box mb={'7'} className='flex flex-col items-center p-6 bg-gradient-to-br from-white to-white rounded-xl shadow-xl'>
+              <Text as='p' size={'5'} align={'center'} weight={'medium'} color='black'>Starter</Text>
+              <Flex justify={'center'} mt={'8'}>
+                <Text as='h5' size='8' weight='medium'>$348</Text>
+                <Text mt={'2'} mx={'1'} >/per Year</Text>
+              </Flex>
+              <Text as='p' mt={'3'} weight={'medium'} color='gray' align={'center'} >No Credit Card Required</Text>
+              <Box align={'center'} mt={'6'}>
+                <button
+                  mt="5"
+                  size="4"
+                  radius="full"
+                  className="bg-blue-500 hover:bg-pink-500 text-white px-9 py-3 font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out"
+                >
+                  Try For Free
+                </button>
+              </Box>
+              <Text align={'center'} mt={'5'} weight={'medium'} color='gray' as='p'>400 GB Storage</Text>
+              <Text align={'center'} mt={'4'} weight={'medium'} color='gray' as='p'>Unlimited Photos & sAnd Videos</Text>
+              <Text align={'center'} mt={'3'} weight={'medium'} color='gray' as='p'>Exclusive Support</Text>
+              <Text align={'center'} mt={'7'} size={'5'} weight={'medium'} color='black' as='p'>7 Day Free Trial</Text>
+
+            </Box>
+            <Box mb={'7'} className='flex flex-col items-center p-6 bg-gradient-to-br from-white to-white rounded-xl shadow-xl'>
+              <Text as='p' size={'5'} align={'center'} weight={'medium'} color='black'>Starter</Text>
+              <Flex justify={'center'} mt={'8'}>
+                <Text as='h5' size='8' weight='medium'>$348</Text>
+                <Text mt={'2'} mx={'1'} >/per Year</Text>
+              </Flex>
+              <Text as='p' mt={'3'} weight={'medium'} color='gray' align={'center'} >No Credit Card Required</Text>
+              <Box align={'center'} mt={'6'}>
+                <button
+                  mt="5"
+                  size="4"
+                  radius="full"
+                  className="bg-pink-500 hover:bg-blue-500 text-white px-9 py-3 font-semibold rounded-full shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out"
+                >
+                  Try For Free
+                </button>
+              </Box>
+              <Text align={'center'} mt={'5'} weight={'medium'} color='gray' as='p'>400 GB Storage</Text>
+              <Text align={'center'} mt={'4'} weight={'medium'} color='gray' as='p'>Unlimited Photos & sAnd Videos</Text>
+              <Text align={'center'} mt={'3'} weight={'medium'} color='gray' as='p'>Exclusive Support</Text>
+              <Text align={'center'} mt={'7'} size={'5'} weight={'medium'} color='black' as='p'>7 Day Free Trial</Text>
+
+            </Box>
+          </Grid>
+        </Container>
       </Box>
     </div>
   );
