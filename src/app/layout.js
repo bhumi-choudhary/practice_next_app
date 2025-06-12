@@ -6,6 +6,10 @@ import { CaretDownIcon } from "@radix-ui/react-icons";
 import { MoonIcon, SearchIcon } from "lucide-react";
 import { Theme } from "@radix-ui/themes";
 import React from "react";
+
+export const metadata = {
+  title: 'next js project '
+}
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
